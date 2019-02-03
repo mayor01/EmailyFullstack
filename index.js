@@ -4,7 +4,7 @@
  * File Created: Sunday, 3rd February 2019 11:02:53 pm
  * Author: Temitayo Bodunrin (temitayo@brandnaware.com)
  * -----
- * Last Modified: Sunday, 3rd February 2019 11:51:18 pm
+ * Last Modified: Monday, 4th February 2019 12:28:45 am
  * Modified By: Temitayo Bodunrin (temitayo@brandnaware.com)
  * -----
  * Copyright 2019, Brandnaware Nigeria
@@ -12,20 +12,13 @@
 
 const express = require('express'),
     http = require('http'),
-    path = require('path'),
     app = express();
 require('dotenv').config();
-
-// Put all the configurations inside a global
-// global.config = require('require-all')({
-//     dirname: __dirname + './config',
-//     excludeDirs: /^\.(git|svn)$/,
-//     recursive: true
-// });
 
 
 //Store all HTML files in view folder.
 app.use(express.static(__dirname + '/views'));
+
 //Store all JS and CSS in Scripts folder.
 app.use(express.static(__dirname + '/public'));
 

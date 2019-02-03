@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
  * File Created: Sunday, 3rd February 2019 11:08:28 pm
  * Author: Temitayo Bodunrin (temitayo@brandnaware.com)
  * -----
- * Last Modified: Monday, 4th February 2019 12:15:58 am
+ * Last Modified: Monday, 4th February 2019 12:28:14 am
  * Modified By: Temitayo Bodunrin (temitayo@brandnaware.com)
  * -----
  * Copyright 2019, Brandnaware Nigeria
@@ -116,7 +116,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Hello World and here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Whatever"));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Hello World and Here, Yay! it works"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Now go break a leg "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I know you are creative, do thing the way you please."));
 };
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('root')); // If you want your app to work offline and load faster, you can change

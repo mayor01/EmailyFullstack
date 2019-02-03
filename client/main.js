@@ -4,7 +4,7 @@
  * File Created: Sunday, 3rd February 2019 11:08:28 pm
  * Author: Temitayo Bodunrin (temitayo@brandnaware.com)
  * -----
- * Last Modified: Monday, 4th February 2019 12:15:58 am
+ * Last Modified: Monday, 4th February 2019 12:28:14 am
  * Modified By: Temitayo Bodunrin (temitayo@brandnaware.com)
  * -----
  * Copyright 2019, Brandnaware Nigeria
@@ -17,8 +17,9 @@ import * as serviceWorker from './serviceWorker';
 const App = props => {
   return (
     <div>
-      <h1>Hello World and here</h1>
-      <p>Whatever</p>
+      <h1>Hello World and Here, Yay! it works</h1>
+      <h2>Now go break a leg </h2>
+      <p>I know you are creative, do thing the way you please.</p>
     </div>
   );
 };
