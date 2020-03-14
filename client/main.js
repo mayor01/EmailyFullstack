@@ -10,21 +10,30 @@
  * Copyright 2019, Brandnaware Nigeria
  */
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import reduxThunk from "redux-thunk";
 
-const App = props => {
-  return (
-    <div>
-      <h1>Hello World and Here, Yay! it works</h1>
-      <h2>Now go break a leg </h2>
-      <p>I know you are creative, do thing the way you please.</p>
-    </div>
-  );
-};
+import App from "./components/App";
+import reducers from "./reducers";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Development only axios helpers!
+import axios from "axios";
+window.axios = axios;
+
+import * as serviceWorker from "./serviceWorker";
+
+//redux store
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.querySelector("#root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

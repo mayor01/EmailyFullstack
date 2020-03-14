@@ -2,6 +2,7 @@ node_modules/
 source-files/
 .DS_Store
 yarn-error.log
+keys.js
 
 
 .env.local

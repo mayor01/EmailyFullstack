@@ -10,12 +10,16 @@
  * Copyright 2019, Brandnaware Nigeria
  */
 
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
-mix.react('client/main.js', 'public/js/')
-    .setPublicPath('public');
+mix.disableSuccessNotifications();
+
+mix
+  .react("client/main.js", "public/js/")
+  .sass("client/scss/main.scss", "public/css")
+  .setPublicPath("public");
 
 mix.browserSync({
-    proxy: 'localhost:5000',
-    port: '3000'
+  proxy: "localhost:5000",
+  port: "3000"
 });
