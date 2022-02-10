@@ -22,7 +22,7 @@
     "dotenv": "^6.2.0",
     "laravel-mix": "^4.0.14",
     "mongoose": "^5.8.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "react": "^16.7.0",
